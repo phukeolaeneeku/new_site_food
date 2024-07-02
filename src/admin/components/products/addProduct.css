@@ -5,11 +5,6 @@
     padding: 1.5rem 1.5rem 0 17rem;
 }
 
-/* input text */
-/* .boxcontainerSpan_Box {
-    width: 100%;
-} */
-
 .box_container_product {
     width: 100%;
     margin-top: 6.5rem;
@@ -27,8 +22,26 @@
     display: grid;
     gap: 1rem;
     width: 100%;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
+
+.Box_btn_haed{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 8px;
+    margin-bottom: 1rem;
+}
+.btn_submit {
+    background-color: #FF4F16;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    padding: 0.7rem 1.3rem;
+    cursor: pointer;
+    border: none;
+}
+
 
 
 .box_text h2 {
@@ -56,9 +69,6 @@
 .box_container_image{
     padding: 2px;
 }
-/* .product_category{
-
-} */
 
 .addProduct_box_content_afterThat {
     padding: 5px 5px;
@@ -91,33 +101,10 @@
 
 
 
-.product_category{
-    width: 100%;
-    height: 2.4rem;
-    margin-top: 0.5rem;
-    font-size: 15px;
-    padding: 0 5px;
-    border: solid 1px #ccc;
-    border-radius: 3px;
-
-}
-
-
 .addProduct_box_content_afterThat img {
     cursor: pointer;
 }
 
-.image {
-    width: 60%;
-    display: grid;
-    height: 30vh;
-    margin-top: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    align-items: center;
-    overflow: hidden;
-    color: #fff;
-}
 
 .edit_images {
     position: absolute;
@@ -138,26 +125,7 @@
 }
 
 
-/* Submit button */
-.Box_btn_haed{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.btn_submit{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.btn_submit button {
-    background-color: #FF4F16;
-    color: #fff;
-    border-radius: 5px;
-    font-size: 1.1rem;
-    padding: 0.7rem 1.3rem;
-    cursor: pointer;
-    border: none;
-}
+
 
 /*========= post_add_product ============*/
 
@@ -170,7 +138,7 @@
 
 .iconimage{ 
     width: 100%;
-    height: 90.5vh;
+    height: 62vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -204,7 +172,7 @@
 .box_input-img {
     position: relative;
     cursor: pointer;
-    width: 338px;
+    width: 258px;
     height: 40vh;
     overflow: hidden;
 }
@@ -221,53 +189,3 @@
 }
 
 
-/* ========== box add size ==========*/
-.box_size_product_container{
-    width: 100%;
-    margin-top: 8px;
-    border: solid 1px #ccc;
-    border-radius: 5px;
-    padding: 10px 10px;
-}
-.box_size_add{
-    display: flex;
-    gap: 5px;
-    align-items: center;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-.box_size_add_item{
-    padding: 5px 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    justify-content: space-between;
-    border: solid 1px #ccc;
-    border-radius: 4px;
-}
-#icon_MdClose{
-    font-size: 18px;
-}
-.box_size_content{
-    display: flex;
-    gap: 5px;
-    align-items: center;
-    padding: 8px 0;
-}
-.box_size_content input{
-    width: 100%;
-    height: 2.4rem;
-    padding: 0 8px;
-    border:  solid 1px #ccc;
-    border-radius: 4px;
-}
-.btn_addsize{
-    height: 2.4rem;
-    padding: 0 8px;
-    display: flex;
-    align-items: center;
-    background: #FF4F16;
-    color: #FFF;
-    border-radius: 4px;
-    cursor: pointer;
-}

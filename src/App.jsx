@@ -66,7 +66,7 @@ import AddPaymentStore from "./admin/components/payment_store/AddPaymentStore";
 import EditAdmin from "./admin/components/menagerAdmin/EditAdmin";
 import AccountAdmin from "./admin/components/accountAdmin/AccountAdmin";
 import { CartProvider } from "./components/cart/CartContext";
-
+import EditItem from "./admin/components/products/EditItem";
 
 
 function App() {
@@ -140,6 +140,7 @@ function App() {
           <Route path="/order/processing" Component={OrderProcess} />
           <Route path="/order/shipped" Component={OrderShipped} />
           <Route path="/order/delivered" Component={OrderDelivered} />
+          <Route path="/edit/item" Component={EditItem} />
           
         </Routes>
       </Router>

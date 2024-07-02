@@ -6,9 +6,16 @@
     padding: 20px;
     border-radius: 10px;
 }
+.box_container_back_icons_back{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    color: #000;
+
+}
 
 .bill-detial {
-    padding: 0 30px 30px 30px;
+    padding: 10px 30px 30px 20px;
 }
 
 .guopoidHead {

@@ -47,7 +47,7 @@ const ProductHome = () => {
                     id="search"
                     type="text"
                     className="input_search_heaederr"
-                    placeholder="search..."
+                    placeholder="Search..."
                   ></input>
                 </div>
               </form>
