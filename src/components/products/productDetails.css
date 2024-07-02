@@ -1,0 +1,284 @@
+body {
+    background-color: #FFF;
+}
+
+.contentBody {
+    width: 70%;
+    margin: 6rem auto 0 auto;
+}
+.product-page-img {
+    display: flex;
+    justify-content: center;
+}
+
+.product-page-img img {
+    width: 70%;
+    margin: auto;
+}
+
+.spennofStyle {
+    width: 20px;
+    height: 40px;
+    background-color: #FF4F16;
+    border-radius: 4px;
+}
+
+.asd2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.box_betavinOfob {
+    margin-bottom: 2rem;
+}
+
+.boxProduct_deteils {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 0;
+    margin: 2rem 0;
+}
+
+.txt_nameP {
+    font-size: 30px;
+}
+
+.money_txt {
+    color: #0E64D2;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.72px;
+}
+
+
+
+.txt_nameP,
+.money_txt,
+.txt_description,
+.color_product,
+.size_product {
+    padding: 0.7rem 0;
+
+}
+
+
+.txt_description {
+    font-family: Poppins;
+    font-size: 16px;
+}
+
+.size_product {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.size_product .size {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+/* Checked radio color */
+.color_product label {
+    cursor: pointer;
+}
+
+.color_product div {
+    display: flex;
+    align-items: center;
+}
+
+.color_product div input {
+    margin-left: 0.3rem;
+}
+
+/* Checkbox size */
+.size_product input {
+    display: none;
+}
+
+.echColor {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    border-radius: 1000px;
+    border: 3px solid black;
+
+}
+
+.echSize {
+    cursor: pointer;
+    padding: 5px 15px;
+    border: 2px solid rgba(0, 0, 0, 0.30);
+    border-radius: 5px;
+}
+
+/* Acctive sizes */
+.echSize.active {
+    cursor: pointer;
+    padding: 7px 17px;
+    border: 2px solid #FF4F16;
+    border-radius: 5px;
+    background-color: #FF4F16;
+    color: #FFF;
+}
+
+.echSize:hover {
+    background-color: #FF4F16;
+    color: #FFF;
+}
+
+.echSize:active {
+    background-color: #FF4F16;
+    color: #FFF;
+}
+
+
+.Count_product {
+    display: flex;
+    gap: 1rem;
+    padding: 25px 0;
+}
+
+.echbtn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.btnBut {
+    background-color: #ff5016ec;
+    color: #FFF;
+    border: 1px solid #FF4F16;
+
+}
+
+.btnBut:hover {
+    background-color: #FF4F16;
+    color: #FFF;
+}
+
+.btnAdd {
+    border: #FF4F16 1px solid;
+    color: #FF4F16;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.btnAdd:hover {
+    background-color: #FF4F16;
+    color: #fff;
+}
+
+.container_item_icon {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-top: 1rem;
+    font-size: 22px;
+}
+
+
+
+.container_item_icon span {
+    width: 5%;
+    text-align: center;
+}
+
+.container_item_icon span input {
+    width: 100%;
+    text-align: center;
+}
+
+
+.container_minus_plus {
+    width: 35px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #999;
+    border-radius: 5px;
+}
+
+.container_minus_plus:hover {
+    background-color: #FF4F16;
+    color: #FFF;
+    cursor: pointer;
+    border: none;
+}
+
+
+.txtContentproduct {
+    width: 80%;
+}
+.txtContentproduct p{
+    font-size: 18px;
+    color: black;
+}
+
+.desc{
+    color: black;
+}
+
+
+/* ----------- Media Screen ---------------- */
+@media screen and (min-width: 1537px) and (max-width: 1950px) {}
+
+@media screen and (max-width: 1025px) {}
+
+@media screen and (max-width: 830px) {}
+
+
+
+@media screen and (max-width: 431px) {
+    .contentBody {
+        width: 100%;
+        overflow: hidden;
+        padding: 10px;
+    }
+
+    .product-page-img {
+        display: block;
+    }
+
+    .product-page-img img {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 7.5rem;
+    }
+
+    .boxProduct_deteils {
+        width: 100%;
+        display: block;
+        margin: 0;
+    }
+
+    .txtContentproduct {
+        padding: 0 10px;
+    }
+
+    .review_box {
+        padding: 10px;
+    }
+    .Count_product{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .container_item_icon{
+        display: flex;
+        align-items: center;
+        justify-content: end;
+    }
+
+}
+
+
+@media screen and (max-width: 376px) {}

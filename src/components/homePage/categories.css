@@ -1,0 +1,105 @@
+.box_category_container {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin: 3.5rem 0 2rem 0;
+    gap: 2rem;
+    flex-wrap: wrap; /* Add this line to allow wrapping on smaller screens */
+}
+
+.box-categories {
+    display: block;
+    justify-content: center;
+    background-color: #FFF;
+    width: 120px;
+    height: auto;
+    border-radius: 5px;
+    border: 1px solid #DDDCE1;
+    margin-top: 1rem;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.box-categories:hover {
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
+}
+
+.box-categories p {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.btn_read_more {
+    border: none;
+    padding: 3px 5px;
+    background-color: #FFF;
+    cursor: pointer;
+}
+
+.box-categories .Box_image {
+    width: 100px;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.box-categories .Box_image img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    overflow: hidden;
+    margin-top: 8px;
+}
+
+.box-categories p {
+    font-size: 16px;
+    margin-bottom: 6px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .box_category_container {
+        gap: 1rem; /* Reduce gap on smaller screens */
+    }
+
+    .box-categories {
+        width: 100px; /* Adjust width for smaller screens */
+    }
+
+    .box-categories .Box_image {
+        width: 80px; /* Adjust image width for smaller screens */
+    }
+
+    .box-categories .Box_image img {
+        height: 80px; /* Adjust image height for smaller screens */
+    }
+
+    .box-categories p {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .box_category_container {
+        margin-top: -1px; /* Reduce gap on smaller screens */
+    }
+
+    .box-categories {
+        width: 80px; /* Further adjust width for very small screens */
+    }
+
+    .box-categories .Box_image {
+        width: 60px; /* Further adjust image width for very small screens */
+    }
+
+    .box-categories .Box_image img {
+        height: 60px; /* Further adjust image height for very small screens */
+    }
+
+    .box-categories p {
+        font-size: 12px; /* Further adjust font size for very small screens */
+    }
+}
