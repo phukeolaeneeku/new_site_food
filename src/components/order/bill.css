@@ -6,7 +6,7 @@
     padding: 20px;
     border-radius: 10px;
 }
-.box_container_back_icons_back{
+.box_container_back_icons_backs{
     display: flex;
     gap: 5px;
     align-items: center;
@@ -89,7 +89,6 @@
     border: none;
     font-size: 14px;
     color: aliceblue;
-    /* background: #FF4F16; */
     cursor: pointer;
     border: 1px solid #ccc;
 }
@@ -103,21 +102,27 @@
 .Delivered_review{
     padding: 2px 10px;
     border: none;
+    font-size: 14px;
     border-radius: 3px;
     color: #fff;
     cursor: pointer;
-    background-color: #FF4F16;
+    background-color: #FF5331;
+    
 }
 .Delivered_review:hover{
     background-color: #f44207;
+    transition: 0.5s;
     box-shadow: rgba(0, 0, 0, 0.10);
 
 }
 /* Responsive */
 @media screen and (max-width: 431px) {
     .bill {
-        width: 100%;
+        width: 95%;
         overflow: hidden;
+    }
+    .box_container_back_icons_backs{
+        display: none;
     }
 
     .bill-detial {
@@ -140,10 +145,4 @@
         margin-top: 2rem;
 
     }
-}
-
-.Box_China_Branch {
-    display: flex;
-    gap: 0.5rem;
-    align-items: center;
 }

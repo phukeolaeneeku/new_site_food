@@ -17,19 +17,25 @@ body {
 }
 
 /* manage and target */
-.containerBox_db {
+.containerBox_board {
     display: grid;
     justify-content: center;
-    width: 877px;
-    height: 448px;
+    width: 1000px;
+    height: 500px;
     border-radius: 20px;
     border: 1px solid #F8F9FA;
     background: #FFF;
     box-shadow: 0px 4px 20px 0px rgba(238, 238, 238, 0.50);
 }
+.containerBox_board h2{
+    text-align: center;
+    margin-top: 3.5rem;
+}
 
-.containerBox_db .contentBox_db {
+.contentBox_db {
     display: flex;
+    gap: 1.5rem;
+    margin-top: -5rem;
 }
 
 /* manage */
@@ -41,20 +47,8 @@ body {
 
 .board .manage-target .manage .menu-box {
     display: grid;
-    width: 180px;
-    height: 184px;
-    text-align: center;
-    align-items: center;
-    margin: 0 0.2rem;
-    overflow: hidden;
-    border-radius: 12px;
-    border: 1px solid #eee;
-
-}
-.board .manage-target .manage .menu-boxs {
-    display: grid;
-    width: 180px;
-    height: 184px;
+    width: 200px;
+    height: 204px;
     text-align: center;
     align-items: center;
     margin: 0 0.2rem;

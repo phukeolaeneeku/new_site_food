@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./banner.css";
-import banner_banners from "../../img/banner_banners.png";
+import delivery_banner from "../../img/delivery_banner.jpg";
 
 const Banner = () => {
   const [background_image, set_background_image] = useState(null);
@@ -30,7 +30,7 @@ const Banner = () => {
       <div>
         <div className="slider_banner">
           <div className="slide_banner"  >
-            <img src={banner_banners} alt="" />
+            <img src={delivery_banner} alt="" />
           </div>
           <div className="navigation_banner but1_banner">
             <div className="nav-btn_banner " onClick={handlePrevSlide}>&#8249;</div>

@@ -1,6 +1,6 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import AdminMenu from "../adminMenu/AdminMenu";
-import "./addProduct.css";
+import "./category.css";
 import imageicon from "../../../img/imageicon.jpg";
 import { AiOutlineDelete } from "react-icons/ai";
 import { CiCamera } from "react-icons/ci";
@@ -9,7 +9,7 @@ import {
   HiPlus,
 } from "react-icons/hi";
 
-const AddProduct = () => {
+const AddCategory = () => {
   const [items, setItems] = useState([
     {
       name: "",
@@ -38,11 +38,10 @@ const AddProduct = () => {
       <section id="post">
         <div className="box_container_product">
           <div className="Box_btn_haed">
-            <h2>Add Item</h2>
+            <h2>Add Category</h2>
             <button type="submit" className="btn_submit">
-              Post item
+              Post category
             </button>
-           
           </div>
 
           <div>
@@ -63,21 +62,14 @@ const AddProduct = () => {
                 <div className="box_container_image">
                   <div className="input-box">
                     <div className="box">
-                      <input type="text" placeholder="Item name" required />
-                    </div>
-                    <div className="box">
-                      <input type="text" placeholder="Item price" required />
-                    </div>
-
-                    <div className="box">
-                      <input type="text" placeholder="Description" required />
+                      <input type="text" placeholder="Category name" required />
                     </div>
                   </div>
                 </div>
               </div>
 
               <div onClick={handleAdd}>
-                <div className="iconimage">
+                <div className="iconimage_handleAdd">
                   <HiMiniShoppingBag id="icon_shoppingbag" />
                   <HiPlus id="icon_goplus" />
                 </div>
@@ -90,4 +82,4 @@ const AddProduct = () => {
   );
 };
 
-export default AddProduct;
+export default AddCategory;

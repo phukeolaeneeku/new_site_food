@@ -50,7 +50,7 @@
     display: grid;
     width: 100%;
     margin: auto;
-    padding: 30px 0;
+    padding: 15px 0;
 
 }
 
@@ -77,7 +77,8 @@
 }
 
 .atitlePrice {
-    padding: 2rem 4rem;
+    padding: 10px;
+    margin-top: -5rem;
     display: flex;
     justify-content: space-between;
 }
@@ -112,109 +113,27 @@
     gap: 1rem;
 }
 
-
-/* update status */
-.aplace-on form {
+.status{
     width: 100%;
     display: flex;
-    justify-content: space-between;
-    gap: 2px;
-}
-
-.aplace-on form .status{
-    width: 80%;
-    display: grid;
+    align-items: center;
+    justify-content: center;
     gap: 1rem;
 }
 
-.aplace-on form .btn{
-    width: 20%;
-    justify-content: right;
-}
-
-.aplace-on form .status .url{
-    width: 80%;
-    display: flex;
-    gap: 4px;
-}
-
-.status .url button{
-    border-radius: 5px;
-    background: rgba(255, 79, 22, 0.92);
-    color: #fff;
-    border: none;
-    font-size: 16px;
-    padding: 0.4rem 1.5rem;
-    cursor: pointer;
-}
-
-.aplace-on form .status .url label{
-    width: 30%;
-    display: flex;
-}
-
-.aplace-on form .status .url input{
-    width: 70%;
-    border-bottom: solid #000 1px;
-    padding: 3px;
-}
 
 .aplace_form_button {
     border-radius: 8px;
-    width: 150px;
-    height: 42px;
-    background: rgba(255, 79, 22, 0.92);
+    width: 130px;
+    height: 40px;
+    background:  #8c1aff;
     color: #fff;
     border: none;
-    font-size: 17px;
+    font-size: 16px;
     cursor: pointer;
 }
 
-
-.image_bill {
-    width: 150px;
-    height: auto;
-    overflow: hidden;
-    object-fit: cover;
-    margin-left: 1.5rem;
-}
-
-.image_bill img {
-    width: 100%;
-    height: 150px;
-    overflow: hidden;
-    object-fit: cover;
-    border-radius: 5px;
-}
-.popup_image_bill{
-    position: absolute;
-    top: 10px;
-    left: 155px;
-    background-color: #fff;
-    border-radius: 5px;
-    padding: 3px 3px 0 3px;
-    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.15);
-    font-size: 15px;
-    cursor: pointer;
-}
-
-.background_addproductpopup_bill {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: #00000036;
-    z-index: 999;
-}
-
-.box_choose_bill {
-    position: absolute;
-    color: white;
-    top: 21.5%;
-    left: 32.5%;
-    padding: 5rem 3rem;
-    background-color: #00000089;
-    border-radius: 7px;
-    cursor: pointer;
+.aplace_form_button:hover {
+    background: #bf00ff;
+    transition: 0.5s;
 }

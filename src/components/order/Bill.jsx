@@ -9,11 +9,11 @@ const Bill = () => {
     <>
       <Header></Header>
       <div className="bill">
-        <Link to="/order" className="box_container_back_icons_back">
+        <Link to="/order" className="box_container_back_icons_backs">
           <IoIosArrowBack id="icons_back" />
           <p>Back</p>
         </Link>
-        <div className="bill-detial newspanBox">
+        <div className="bill-detial">
           <div className="guopoidHead">
             <div className="idf">
               <p>Order ID:</p>
@@ -37,7 +37,8 @@ const Bill = () => {
                   <td>Quantity</td>
 
                   <th>
-                    <button className="Delivered_review">Review</button>
+                    {/* <button className="Delivered_review">Review</button> */}
+                    <Link to="/review-product" className="Delivered_review">Review</Link>
                   </th>
                 </tr>
               </tbody>

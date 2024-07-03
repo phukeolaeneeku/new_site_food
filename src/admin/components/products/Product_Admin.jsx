@@ -16,12 +16,16 @@ const Product_Admin = () => {
         <div className="container_body_admin_product">
           <div className="productHead_content">
             <h1 className="htxthead">
-              <span className="spennofStyleadmin"></span>Items
+              <span className="spennofStyleadmin"></span>Items and Category
             </h1>
             <div className="categoryBoxfiler">
+              <Link to="/add-category" className="box_add_product">
+                <BiPlus id="icon_add_product" />
+                <p>Add category</p>
+              </Link>
               <Link to="/addproduct-admin" className="box_add_product">
                 <BiPlus id="icon_add_product" />
-                <p>Add item</p>
+                <p>Add items</p>
               </Link>
             </div>
           </div>
@@ -37,20 +41,16 @@ const Product_Admin = () => {
           </div>
 
           <div className="box_category">
-            <div className="box_contact_category">
+            <Link to="/edit-eategory" className="box_contact_category">
               <div className="img">
                 <img src={imageicon} alt="img" />
               </div>
               <div className="ChooseImage_category">
-                <CiCamera id="iconCamera_category" />
+                <MdOutlineEdit id="icon_edit_MdOutlineEdit" />
               </div>
-              <div className="box_icon_MdOutlineEdit">
-                <p>category.name</p>
-                <div className="box_MdOutlineEdit">
-                  <MdOutlineEdit id="icon_edit_MdOutlineEdit" />
-                </div>
-              </div>
-            </div>
+              <p>category.name</p>
+            </Link>
+           
           </div>
 
           <div id="container_product_admin">
@@ -59,35 +59,9 @@ const Product_Admin = () => {
                 <span className="spennofStyle"></span>ALL Items
               </h1>
             </div>
-            {/* <div className="contentImageProducts">
-              <div className="box_product">
-                <div className="box_input-img">
-                  <div className="box_image">
-                    <img src={imageicon} alt="Product" />
-                    <input type="file" required />
-                  </div>
-
-                  <div className="Box_delete_product">
-                    <AiOutlineDelete />
-                  </div>
-
-                  <div className="edit_image_product">
-                    <CiCamera id="box_icon_camera_product" />
-                  </div>
-                </div>
-
-                <div className="txtOFproduct">
-                  <div
-                    className="box_icon_MdOutlineEdit"
-                  >
-                    <li>ProductName:</li>
-                  </div>
-                </div>
-              </div>
-            </div> */}
             <div className="product-area">
               <div className="box-product">
-                <Link to="/edit/item">
+                <Link to="/edit-item">
                   <div className="img">
                     <img src={productImage} alt="image" />
                   </div>
@@ -98,7 +72,7 @@ const Product_Admin = () => {
                 </Link>
               </div>
               <div className="box-product">
-                <Link to="/edit/item">
+                <Link to="/edit-item">
                   <div className="img">
                     <img src={productImage} alt="image" />
                   </div>
@@ -109,7 +83,7 @@ const Product_Admin = () => {
                 </Link>
               </div>
               <div className="box-product">
-                <Link to="/edit/item">
+                <Link to="/edit-item">
                   <div className="img">
                     <img src={productImage} alt="image" />
                   </div>

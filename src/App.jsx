@@ -11,27 +11,27 @@ import Signup2 from "./components/loginAndSignup/Signup2";
 import ChangeSeller from "./components/loginAndSignup/ChangeSeller";
 import AdditionalSeller from "./components/loginAndSignup/AdditionalSeller"
 
-//------ Profile Page ------//
-import ProfileEdit from "./components/profile/ProfileEdit";
-import Accuont from "./components/profile/Accuont";
 
 //------ Home Page ------//
 import Home from "./components/homePage/HomePage";
 import ProductDetails from "./components/products/ProductDetails";
 import Cart from "./components/cart/Cart";
-import SuccessfulBuy from "./components/cart/SuccessfulBuy";
-import Chats from "./components/chat/Chats";
-import ChatListPage from "./components/chat/ChatListPage";
-import ChatRoomPage from "./components/chat/ChatRoomPage";
+import Order from "./components/order/Order";
+import Bill from "./components/order/Bill";
 import Categories from "./components/homePage/Categories";
+import ReviewProduct from "./components/order/ReviewProduct"
+import ProfileEdit from "./components/profile/ProfileEdit";
+import Accuont from "./components/profile/Accuont";
+
 
 import Chat_Details from "./components/chat/Chat_Details";
 import Address from "./components/cart/Address";
 import Payment from "./components/cart/Payment";
-import Order from "./components/order/Order";
-import Bill from "./components/order/Bill";
-
+import SuccessfulBuy from "./components/cart/SuccessfulBuy";
 import Contact from "./components/contact/Contact"
+import Chats from "./components/chat/Chats";
+import ChatListPage from "./components/chat/ChatListPage";
+import ChatRoomPage from "./components/chat/ChatRoomPage";
 
 //------ Seller ------//
 import Stores from "./components/seller/stores/Store";
@@ -50,6 +50,11 @@ import BillStore from "./components/seller/orderStore/BillStore";
 import Dashboard from "./admin/Dashboard";
 import Product_admin from "./admin/components/products/Product_Admin";
 import Addproduct_admin from "./admin/components/products/AddProduct";
+import EditItem from "./admin/components/products/EditItem";
+import AddCategory from "./admin/components/categoryMenagement/AddCategory";
+import EditCategory from "./admin/components/categoryMenagement/EditCategory"
+
+
 import Users from "./admin/components/menagerUser/Users";
 import User_details from "./admin/components/menagerUser/User_details";
 import OrderBill_Admin from "./admin/components/orderPage/OrderBill";
@@ -66,7 +71,7 @@ import AddPaymentStore from "./admin/components/payment_store/AddPaymentStore";
 import EditAdmin from "./admin/components/menagerAdmin/EditAdmin";
 import AccountAdmin from "./admin/components/accountAdmin/AccountAdmin";
 import { CartProvider } from "./components/cart/CartContext";
-import EditItem from "./admin/components/products/EditItem";
+
 
 
 function App() {
@@ -75,7 +80,7 @@ function App() {
       <Router>
         <Routes>
           {/* --------- Login-Signup page---------- */}
-          <Route path="/loginuser" Component={LoginUser} />
+          <Route path="/login" Component={LoginUser} />
           <Route path="/registeruser" Component={RegisterUser} />
           <Route path="/forgotpassword" Component={ForgotPassword} />
 
@@ -95,8 +100,9 @@ function App() {
           {/* --------- Home Page ---------- */}
           <Route path="/" exact Component={Home} />
           <Route path="/goods" Component={ProductDetails} />
-
           <Route path="/cart" Component={Cart} />
+          <Route path="/review-product" Component={ReviewProduct} />
+
           <Route path="/successfulbuy" Component={SuccessfulBuy} />
           <Route path="/address" Component={Address} />
           <Route path="/chats" Component={Chats} />
@@ -127,9 +133,14 @@ function App() {
           <Route path="/dashboard" Component={Dashboard} />
           <Route path="/product-admin" Component={Product_admin} />
           <Route path="/addproduct-admin" Component={Addproduct_admin} />
+          <Route path="/edit-item" Component={EditItem} />
+          <Route path="/add-category" Component={AddCategory} />
+          <Route path="/edit-eategory" Component={EditCategory} />
+          <Route path="/orderbill-admin" Component={OrderBill_Admin} />
+
+
           <Route path="/users" Component={Users} />
           <Route path="/user-details/:id" Component={User_details} />
-          <Route path="/orderbill-admin/:bill_id" Component={OrderBill_Admin} />
           <Route path="/admins" Component={Admins} />
           <Route path="/add-admin" Component={Add_Admin} />
           <Route path="/edit-admin/:id" Component={EditAdmin} />
@@ -140,7 +151,7 @@ function App() {
           <Route path="/order/processing" Component={OrderProcess} />
           <Route path="/order/shipped" Component={OrderShipped} />
           <Route path="/order/delivered" Component={OrderDelivered} />
-          <Route path="/edit/item" Component={EditItem} />
+          
           
         </Routes>
       </Router>

@@ -55,10 +55,10 @@ const AdminMenu = () => {
                 <p>Admins</p>
               </NavLink>
             </>
-            <NavLink to="/payment-store" className="link">
+            {/* <NavLink to="/payment-store" className="link">
               <CiBank />
               <p>Bank</p>
-            </NavLink>
+            </NavLink> */}
 
             <div onClick={() => setShowConfirmation(true)} className="link">
               <IoLogOutOutline />

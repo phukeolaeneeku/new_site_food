@@ -71,18 +71,7 @@ const Menu = () => {
           </span>
           <span>Home</span>
         </Link>
-        <Link
-          to="#"
-          className={
-            location.pathname === "/chats" ? "box-menu active" : "box-menu"
-          }
-          onClick={() => handleMenuClick("/chats")}
-        >
-          <span className="iconMenuSpan">
-            <IoChatbubbleEllipsesOutline />
-          </span>
-          <span>Chat</span>
-        </Link>
+        
         <Link
           to="/order"
           className={

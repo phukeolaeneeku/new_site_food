@@ -31,7 +31,7 @@
     align-items: center;
 }
 .Box_icon_login_BiLogIn:hover{
-    color: #FF4F16;
+    color: #FF5331;
     transition: 0.3s;
 }
 #icon_BiLogIn{
@@ -82,7 +82,7 @@
 }
 .headMenu .linkLi,
 .head_colorr:hover {
-    color: #FF4F16;
+    color: #FF5331;
 }
 
 #header .navbar a {
@@ -91,7 +91,7 @@
 }
 
 .linkLi a:hover {
-    color: #FF4F16;
+    color: #FF5331;
 }
 
 .link {

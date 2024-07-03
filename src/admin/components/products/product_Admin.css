@@ -292,6 +292,10 @@ a {
     cursor: pointer;
 
 }
+.box_contact_category p{
+    text-align: center;
+    color: black;
+}
 .ChooseImage_category {
     position: absolute;
     top: 8px;

@@ -10,8 +10,8 @@ const Board = () => {
         <div className="board">
           <div className="manage-target">
             <div className="manage">
-              <div className="containerBox_db">
-                <h3>Orders</h3>
+              <div className="containerBox_board">
+                <h2>Orders</h2>
                 <div className="contentBox_db">
                   <div className="menu-box four">
                     <div>
