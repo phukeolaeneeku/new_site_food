@@ -4,7 +4,7 @@
 }
 
 .box_cart_container p.no-reviews-message {
-    color: #FA442C;
+    color: #FF5331;
     text-align: center;
 }
 
@@ -130,7 +130,7 @@
 
 .checkout_btn {
     padding: 12px 28px;
-    background: #FA442C;
+    background: #FF5331;
     color: #ffffff;
     border-radius: 5px;
     border: 1px;
@@ -165,7 +165,7 @@
     display: flex;
     align-items: center;
     cursor: pointer;
-    background: #FA442C;
+    background: #FF5331;
     border-radius: 8px;
     justify-content: center;
     padding: 7px;
@@ -178,7 +178,7 @@
 .cart {
     text-align: center;
     font-size: 1.3rem;
-    color: #ff0000;
+    color: #FF5331;
 }
 
 /*=========== Resposive =============*/

@@ -126,7 +126,7 @@
     border-radius: 8px;
     width: 130px;
     height: 40px;
-    background:  #8c1aff;
+    background:  #FF5331;
     color: #fff;
     border: none;
     font-size: 16px;
@@ -134,6 +134,6 @@
 }
 
 .aplace_form_button:hover {
-    background: #bf00ff;
+    background: #f44100;
     transition: 0.5s;
 }

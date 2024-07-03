@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import "./user_details.css";
 import AdminMenu from "../adminMenu/AdminMenu";
 import { FaAngleLeft } from "react-icons/fa";
@@ -5,78 +6,10 @@ import { AiOutlineDelete } from "react-icons/ai";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import { MdOutlineEmail } from "react-icons/md";
 import { LuUser } from "react-icons/lu";
-import { FiPhone } from "react-icons/fi";
-import { useEffect, useState } from "react";
 import profile from "../../../img/profile.jpg";
-import axios from "axios";
 
 const User_details = () => {
-  const token = localStorage.getItem("token");
-  const id = useParams().id;
-  const navigate = useNavigate();
-  const [user, set_user] = useState([]);
-
-  useEffect(() => {
-    let config = {
-      method: "get",
-      maxBodyLength: Infinity,
-      url: import.meta.env.VITE_API + "/user/client-users",
-      headers: {
-        "Content-Type": "application/json",
-      },
-    };
-
-    axios
-      .request(config)
-      .then((response) => {
-        // console.log(JSON.stringify(response.data));
-        set_user(response.data);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  }, []);
-
-  useEffect(() => {
-    let config = {
-      method: "get",
-      maxBodyLength: Infinity,
-      url: import.meta.env.VITE_API + `/user/client-users/${id}/get`,
-      headers: {},
-    };
-
-    axios
-      .request(config)
-      .then((response) => {
-        set_user(response.data);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  }, []);
-
-  const handleDelete = (id) => {
-    let data = "";
-
-    let config = {
-      method: "delete",
-      maxBodyLength: Infinity,
-      url: import.meta.env.VITE_API + `/user/client-users/${id}`,
-      headers: {},
-      data: data,
-    };
-
-    axios
-      .request(config)
-      .then((response) => {
-        alert("Delete user successful.");
-        navigate("/users");
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  };
-
+  const [showConfirmation, setShowConfirmation] = useState(false);
   return (
     <>
       <AdminMenu />
@@ -90,14 +23,9 @@ const User_details = () => {
         <div className="box_addAdmin">
           <form>
             <div className="addAdminForm">
-              <h3>User Details</h3>
-              <div
-                className="del-update"
-                onClick={() => {
-                  handleDelete(user.id);
-                }}
-              >
-                <div className="del">
+              <h2>User Details</h2>
+              <div className="del-update">
+                <div className="del" onClick={() => setShowConfirmation(true)}>
                   <AiOutlineDelete />
                 </div>
               </div>
@@ -108,7 +36,7 @@ const User_details = () => {
                 <div className="boxiconnandinput">
                   <LuUser className="iconinput" />
                   <div className="input">
-                    <p>{user.id}</p>
+                    <p>UserID...</p>
                   </div>
                 </div>
               </div>
@@ -119,7 +47,7 @@ const User_details = () => {
                 <div className="boxiconnandinput">
                   <LuUser className="iconinput" />
                   <div className="input">
-                    <p>{user.nickname}</p>
+                    <p>Nickname...</p>
                   </div>
                 </div>
               </div>
@@ -131,7 +59,7 @@ const User_details = () => {
                 <div className="boxiconnandinput">
                   <MdOutlineEmail className="iconinput" />
                   <div className="input">
-                    <p>{user.email}</p>
+                    <p>Email...</p>
                   </div>
                 </div>
               </div>
@@ -141,13 +69,30 @@ const User_details = () => {
                 </label>
                 <div className="BorderinputThenImage">
                   <div className="input">
-                    <img
-                      src={user.profile_image || profile}
-                      alt="admin profile"
-                    />
+                    <img src={profile} alt="admin profile" />
                   </div>
                 </div>
               </div>
+              {showConfirmation && (
+                <div className="background_addproductpopup_box">
+                  <div className="hover_addproductpopup_box">
+                    <div className="box_logout">
+                      <p>Are you sure you want to delete?</p>
+                    </div>
+                    <div className="btn_foasdf">
+                      <button
+                        className="btn_cancel btn_addproducttxt_popup"
+                        onClick={() => setShowConfirmation(false)}
+                      >
+                        No
+                      </button>
+                      <button className="btn_confirm btn_addproducttxt_popup">
+                        Yes
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              )}
             </div>
           </form>
         </div>

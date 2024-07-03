@@ -8,7 +8,7 @@
     border-radius: 7px;
     color: #fff;
     font-size: 1.2rem;
-    background-color: #ff7446;
+    background-color: #FF5331;
     cursor: pointer;
     border: none;
     box-shadow: 0 0.125rem 0.25rem 0 rgba(255, 165, 105, 0.4);
@@ -19,8 +19,8 @@
     border-radius: 7px;
     color: #fff;
     font-size: 1.2rem;
-    background-color: #27A7EF;
+    background-color: #FF5331;
     cursor: pointer;
     border: none;
-    box-shadow: 0 0.125rem 0.25rem 0 rgba(105, 158, 255, 0.4);
+    box-shadow: 0 0.125rem 0.25rem 0 rgba(255, 180, 105, 0.4);
 }

@@ -83,7 +83,7 @@ const ProductHome = () => {
                   </Link>
                 </div>
                 <div className="userAndstore">
-                  <Link to="/loginuser" className="Box_icon_login_BiLogIn">
+                  <Link to="/login" className="Box_icon_login_BiLogIn">
                     Login
                     <BiLogIn id="icon_BiLogIn" />
                   </Link>

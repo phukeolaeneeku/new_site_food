@@ -21,7 +21,7 @@
     border-radius: 5px;
     font-size: 16px;
     color: #FFFFFF;
-    background-color: #15c65c;
+    background-color: #FF5331;
 }
 #icon_add_admin{
     width: 25px;
@@ -85,7 +85,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #FA442C;
+    background: #FF5331;
     cursor: pointer;
     border: none;
     border-radius: 8px;
@@ -115,7 +115,7 @@
     border-radius: 6px;
     align-items: center;
     justify-content: center;
-    background: #FA442C;
+    background: #FF5331;
 }
 
 .box_prev_nexts_admin{
@@ -166,7 +166,6 @@
     border: none;
 }
 
-/*=======img========*/
 #image {
     width: 100%;
     display: grid;
@@ -178,5 +177,3 @@
     color: #fff;
 }
 
-
-/* ================ Responsive ==================*/

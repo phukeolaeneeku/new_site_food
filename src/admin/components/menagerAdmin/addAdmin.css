@@ -31,7 +31,7 @@
     border-radius: 5px;
     margin: 1rem 0;
     color: #FFF;
-    background: #ff7446;
+    background: #FF5331;
     box-shadow: 0 0.125rem 0.25rem 0 rgba(255, 165, 105, 0.4);
 }
 
@@ -136,7 +136,7 @@
     border-radius: 4px;
     color: #fff;
     font-size: 1.2rem;
-    background-color: #ff7446;
+    background-color: #FF5331;
     cursor: pointer;
     border: none;
     box-shadow: 0 0.125rem 0.25rem 0 rgba(255, 165, 105, 0.4);
@@ -173,7 +173,7 @@
     border: none;
     align-items: center;
     justify-content: center;
-    background: #FA442C;
+    background: #FF5331;
     border-radius: 5px;
     color: #FFF;
     font-size: 16px;
@@ -208,7 +208,7 @@
     align-items: center;
     font-size: 1.3rem;
     color: #fff;
-    background-color: #ff7446;
+    background-color: #FF5331;
     cursor: pointer;
     border-radius: 7px;
 }

@@ -56,7 +56,7 @@
 }
 
 .search-box_menageruser button {
-    background: #ff7446;
+    background: #FF5331;
     color: #FFF;
     width: 75px;
     height: 45px;
@@ -308,7 +308,7 @@
     border-radius: 6px;
     align-items: center;
     justify-content: center;
-    background: #fa442c;
+    background: #FF5331;
   }
   
   .box_num_resume {

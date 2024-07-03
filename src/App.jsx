@@ -137,20 +137,20 @@ function App() {
           <Route path="/add-category" Component={AddCategory} />
           <Route path="/edit-eategory" Component={EditCategory} />
           <Route path="/orderbill-admin" Component={OrderBill_Admin} />
-
-
           <Route path="/users" Component={Users} />
-          <Route path="/user-details/:id" Component={User_details} />
+          <Route path="/user-details" Component={User_details} />
           <Route path="/admins" Component={Admins} />
           <Route path="/add-admin" Component={Add_Admin} />
-          <Route path="/edit-admin/:id" Component={EditAdmin} />
-          <Route path="/store-admin" Component={StoreAdmin} />
-          <Route path="/account-admin" Component={Account_Admin} />
-          <Route path="/edit-account" Component={AccountAdmin} />
+          <Route path="/edit-admin" Component={EditAdmin} />
           <Route path="/order/pending" Component={OrderPending} />
           <Route path="/order/processing" Component={OrderProcess} />
           <Route path="/order/shipped" Component={OrderShipped} />
           <Route path="/order/delivered" Component={OrderDelivered} />
+
+
+          <Route path="/store-admin" Component={StoreAdmin} />
+          <Route path="/account-admin" Component={Account_Admin} />
+          <Route path="/edit-account" Component={AccountAdmin} />
           
           
         </Routes>

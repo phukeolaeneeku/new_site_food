@@ -9,6 +9,8 @@ import { IoChatbubbleEllipsesOutline } from "react-icons/io5";
 import { GrContact } from "react-icons/gr";
 import { BsCart3 } from "react-icons/bs";
 import React, { useState } from "react";
+import logo_resoure2 from "../../img/logo_resoure2.jpeg";
+import productImage from "../../img/productImage.png";
 
 const Menu = () => {
   const location = useLocation();
@@ -27,9 +29,8 @@ const Menu = () => {
           <div className="footconentBox">
             <h3 className="txt_footHead">About</h3>
             <Link to="/" className="txt_pFoot">
-              <img src={Logo1} alt="" />
+              <img src={logo_resoure2} alt="" />
             </Link>
-            <p>Humascot</p>
           </div>
 
           <div className="footconentBox">
@@ -55,7 +56,7 @@ const Menu = () => {
           </div>
         </div>
         <hr className="hrfoo" />
-        <p className="lastFooter">Copyright &#169; TACA 2023</p>
+        <p className="lastFooter">Copyright &#169; Delivery 2024</p>
       </footer>
 
       {/* Footer Menu For Mobile */}
