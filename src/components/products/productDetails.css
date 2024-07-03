@@ -59,8 +59,7 @@ body {
 .txt_nameP,
 .money_txt,
 .txt_description,
-.color_product,
-.size_product {
+.color_product{
     padding: 0.7rem 0;
 
 }
@@ -71,17 +70,7 @@ body {
     font-size: 16px;
 }
 
-.size_product {
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-}
 
-.size_product .size {
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-}
 
 /* Checked radio color */
 .color_product label {
@@ -97,10 +86,6 @@ body {
     margin-left: 0.3rem;
 }
 
-/* Checkbox size */
-.size_product input {
-    display: none;
-}
 
 .echColor {
     width: 25px;
@@ -110,34 +95,6 @@ body {
     border: 3px solid black;
 
 }
-
-.echSize {
-    cursor: pointer;
-    padding: 5px 15px;
-    border: 2px solid rgba(0, 0, 0, 0.30);
-    border-radius: 5px;
-}
-
-/* Acctive sizes */
-.echSize.active {
-    cursor: pointer;
-    padding: 7px 17px;
-    border: 2px solid #FF4F16;
-    border-radius: 5px;
-    background-color: #FF4F16;
-    color: #FFF;
-}
-
-.echSize:hover {
-    background-color: #FF4F16;
-    color: #FFF;
-}
-
-.echSize:active {
-    background-color: #FF4F16;
-    color: #FFF;
-}
-
 
 .Count_product {
     display: flex;

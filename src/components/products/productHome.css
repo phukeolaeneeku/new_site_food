@@ -87,6 +87,26 @@ a {
     border-bottom-right-radius: 6px;
 }
 
+
+.star {
+    width: 86px;
+    height: 15px;
+    margin-top: 12px;
+    background: url("../assets/img/icon/star.png") no-repeat;
+    background-size: 86px;
+    position: relative;
+
+    .on {
+        width: 90%;
+        height: 15px;
+        background: url("../assets/img/icon/star_on.png") no-repeat;
+        background-size: 86px;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+}
+
 .name,
 .price {
     color: black;

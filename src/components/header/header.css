@@ -24,12 +24,15 @@
     display: flex;
     gap: 2px;
     align-items: center;
-    
+    color: #777;
 }
 .Box_icon_login_BiLogIn{
     display: flex;
     align-items: center;
-
+}
+.Box_icon_login_BiLogIn:hover{
+    color: #FF4F16;
+    transition: 0.3s;
 }
 #icon_BiLogIn{
     font-size: 1.5rem;
@@ -77,6 +80,10 @@
 .head_colorr {
     transition: all 0.3s ease;
 }
+.headMenu .linkLi,
+.head_colorr:hover {
+    color: #FF4F16;
+}
 
 #header .navbar a {
     text-decoration: none;
@@ -87,9 +94,10 @@
     color: #FF4F16;
 }
 
-.active {
-    color: #168aff;
-}
+.link {
+    text-decoration: none;
+  }
+  
 
 /* Search bar */
 .search_wrap {

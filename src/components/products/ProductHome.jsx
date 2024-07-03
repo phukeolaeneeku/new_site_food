@@ -6,6 +6,7 @@ import { FaMagnifyingGlass, FaCartShopping, FaRegUser } from "react-icons/fa6";
 import { AiOutlineDashboard } from "react-icons/ai";
 import { BiLogIn } from "react-icons/bi";
 import logo_resoure2 from "../../img/logo_resoure2.jpeg";
+import { IoStar } from "react-icons/io5";
 
 const ProductHome = () => {
   const products = [
@@ -14,6 +15,14 @@ const ProductHome = () => {
     { id: 3, name: "product 3", price: 100 },
     { id: 4, name: "product 4", price: 100 },
   ];
+
+  function StarAVG(value) {
+    let star_avg = (value / 5) * 100;
+    if (star_avg === 0) {
+      star_avg = 100;
+    }
+    return star_avg;
+  }
   return (
     <div>
       <section id="header">
@@ -114,6 +123,12 @@ const ProductHome = () => {
                   <img src={productImage} alt="image" />
                 </div>
                 <ul className="txtOFproduct2">
+                  <div className="star">
+                    <div
+                      className="on"
+                      style={{ width: `${StarAVG(product.star_avg)}%` }}
+                    ></div>
+                  </div>
                   <li className="name">Name: {product.name}</li>
                   <li className="price">Price: ${product.price}</li>
                 </ul>

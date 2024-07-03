@@ -17,22 +17,10 @@ function ProductDetails() {
                 <img src={productImage} alt="img" />
               </div>
               <div className="txtContentproduct">
-                <h1 className="txt_nameP">Name...</h1>
+                <h4 className="txt_nameP">Name...</h4>
                 <p className="money_txt">$ Price...</p>
-                <p className="txt_description">Description...</p>
 
-                <div className="size_product">
-                  <p>Color:</p>
-                  <div className="size">
-                    <p className="active echSize echSize">Color</p>
-                  </div>
-                </div>
-                <div className="size_product">
-                  <p>Size:</p>
-                  <div className="size">
-                    <p className="active echSize echSize">Size</p>
-                  </div>
-                </div>
+              
                 <div className="container_item_icon">
                   <div className="container_minus_plus">-</div>
                   <span>1</span>
@@ -59,7 +47,6 @@ function ProductDetails() {
               <ul className="txtOFproduct2">
                 <li className="name">Name...</li>
                 <li className="price">$ Price...</li>
-                <li className="desc">Description...</li>
               </ul>
             </Link>
           </div>
