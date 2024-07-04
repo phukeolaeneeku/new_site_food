@@ -80,11 +80,11 @@ const AdminMenu = () => {
               {/* <NavLink to="/users" className="link">
                 <BiUser />
                 <p>Users</p>
-              </NavLink>
+              </NavLink> */}
               <NavLink to="/admins" className="link">
                 <IoPeopleOutline />
                 <p>Admins</p>
-              </NavLink> */}
+              </NavLink>
             </>
             {/* <NavLink to="/payment-store" className="link">
               <CiBank />
