@@ -12,10 +12,36 @@ import imageicon from "../../../img/imageicon.jpg";
 import { IoPeopleOutline } from "react-icons/io5";
 import logo_resoure2 from "../../../img/logo_resoure2.jpeg";
 
-
 const AdminMenu = () => {
-  
   const [showConfirmation, setShowConfirmation] = useState(false);
+  const [isPopupImageLogo, setPopupImageLogo] = useState(false);
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  const togglePopupImageLogo = () => {
+    setPopupImageLogo(true);
+  };
+
+  const togglePopupCancelImageLogo = () => {
+    setPopupImageLogo(false);
+    setSelectedImage(null); // Clear the selected image on cancel
+  };
+
+  const handleImageChange = (event) => {
+    if (event.target.files && event.target.files[0]) {
+      const reader = new FileReader();
+      reader.onload = (e) => {
+        setSelectedImage(e.target.result);
+      };
+      reader.readAsDataURL(event.target.files[0]);
+    }
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    // Handle the image update logic here, e.g., send to server
+    setPopupImageLogo(false); // Close the popup after updating
+  };
+
   const handleLogout = () => {
     localStorage.clear();
     navigate("/");
@@ -47,18 +73,18 @@ const AdminMenu = () => {
                 <HiOutlineBuildingStorefront />
                 <p>Emplyee</p>
               </NavLink>
-              <NavLink to="/" className="link">
+              <NavLink to="/member" className="link">
                 <LiaUserCogSolid />
                 <p>Members</p>
               </NavLink>
-              <NavLink to="/users" className="link">
+              {/* <NavLink to="/users" className="link">
                 <BiUser />
                 <p>Users</p>
               </NavLink>
               <NavLink to="/admins" className="link">
                 <IoPeopleOutline />
                 <p>Admins</p>
-              </NavLink>
+              </NavLink> */}
             </>
             {/* <NavLink to="/payment-store" className="link">
               <CiBank />
@@ -99,10 +125,52 @@ const AdminMenu = () => {
               <NavLink to="/" className="logo">
                 <img src={logo_resoure2} alt="" />
               </NavLink>
-              <div className="popup_image_logo" >
+              <div className="popup_image_logo" onClick={togglePopupImageLogo}>
                 <CiCamera id="box_icon_camera" />
               </div>
             </div>
+
+            {isPopupImageLogo && (
+              <form
+                className="background_addproductpopup_box"
+                onSubmit={handleSubmit}
+              >
+                <div className="hover_addproductpopup_box_image">
+                  <div className="box_input_image">
+                    <p>Edit Logo image</p>
+                    <label className="popup_Border_Boximagae">
+                      <input
+                        type="file"
+                        id="img"
+                        required
+                        onChange={handleImageChange}
+                      />
+                      <p className="box_choose_image">Choose img</p>
+                    </label>
+                    {selectedImage && (
+                      <div className="image_preview">
+                        <img src={selectedImage} alt="Selected" />
+                      </div>
+                    )}
+                  </div>
+                  <div className="btn_foasdf">
+                    <button
+                      className="btn_cancel btn_addproducttxt_popup"
+                      onClick={togglePopupCancelImageLogo}
+                    >
+                      Cancel
+                    </button>
+                    <button
+                      className="btn_confirm btn_addproducttxt_popup"
+                      type="submit"
+                    >
+                      Update
+                    </button>
+                  </div>
+                </div>
+              </form>
+            )}
+
             <div className="boximage_admin">
               <NavLink to="/account-admin" className="userAdminImage">
                 <p>Email...</p>

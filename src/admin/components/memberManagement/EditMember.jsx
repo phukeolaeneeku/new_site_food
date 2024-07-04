@@ -1,16 +1,11 @@
 import React from "react";
-import "./editemployee.css";
 import AdminMenu from "../adminMenu/AdminMenu";
 import { LuUser } from "react-icons/lu";
-import { BiPlus } from "react-icons/bi";
+import { CiImageOn } from "react-icons/ci";
 import { MdOutlinePhonePaused } from "react-icons/md";
 import { RiMapPinLine } from "react-icons/ri";
-import { MdOutlineCountertops } from "react-icons/md";
-import { CgProfile } from "react-icons/cg";
-import imageicon from "../../../img/imageicon.jpg";
-import { CiImageOn } from "react-icons/ci";
 
-const AddEmployee = () => {
+const EditMember = () => {
   return (
     <>
       <AdminMenu />
@@ -19,14 +14,15 @@ const AddEmployee = () => {
           <form>
             <div className="addAdminForm">
               <div className="boxhead_subminandtitle">
-                <h2 className="titleaddmin">Edit employee</h2>
+                <h2 className="titleaddmin">Edit Member</h2>
                 <div>
-                  <button type="submit" className="btn_add_employee">
-                    Update employee
+                  <button type="submit" className="submit">
+                    Update member
                   </button>
                 </div>
               </div>
 
+             
               <div className="add-box">
                 <label htmlFor="fname" className="titlelabel">
                   First name:
@@ -56,6 +52,7 @@ const AddEmployee = () => {
                   />
                 </div>
               </div>
+
               <div className="add-box">
                 <label htmlFor="email" className="titlelabel">
                   Email:
@@ -116,21 +113,6 @@ const AddEmployee = () => {
               </div>
 
               <div className="add-box">
-                <label htmlFor="role" className="titlelabel">
-                  Role:
-                </label>
-                <div className="boxiconnandinput">
-                  <MdOutlineCountertops className="iconinput" />
-
-                  <select name="role" className="input_select" >
-                    <option value="">Select role</option>
-                    <option value="">...</option>
-                    <option value="">...</option>
-                  </select>
-                </div>
-              </div>
-
-              <div className="add-box">
                 <label htmlFor="profile" className="titlelabel">
                   Profile image:
                 </label>
@@ -144,14 +126,12 @@ const AddEmployee = () => {
                   />
                 </div>
               </div>
-
             </div>
           </form>
         </div>
       </section>
-      
     </>
   );
 };
 
-export default AddEmployee;
+export default EditMember;

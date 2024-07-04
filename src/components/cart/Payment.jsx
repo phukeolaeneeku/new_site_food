@@ -38,45 +38,19 @@ const Payment = () => {
             <form className="box_address_input">
               <div className="box">
                 <label htmlFor="prov">Contact number:</label>
+                <input type="text" id="prov" placeholder="Contact number"/>
+              </div>
+              <div className="box">
+                <label htmlFor="prov">Address:</label>
                 <input type="text" id="prov" />
               </div>
-              <div className="box">
-                <label htmlFor="prov">Province:</label>
-                <input type="text" id="prov" />
-              </div>
-              <div className="box">
-                <label htmlFor="city">District:</label>
-                <input type="text" id="city" />
-              </div>
-              <div className="box">
-                <label htmlFor="companny">Shipping Companny name:</label>
-                <input type="text" id="companny" />
-              </div>
-              <div className="box">
-                <label htmlFor="branch">Branch:</label>
-                <input type="text" id="branch" />
-              </div>
-              <div className="box">
-                <label htmlFor="branch">Account name:</label>
-                <input type="text" id="prov" />
-              </div>
+             
             </form>
           </div>
           <div className="box_transfer">
             <p className="box_transfer_p_line">Total Price:</p>
           </div>
-          <div className="box_transfer">
-            <p className="box_transfer_p_line">
-              Please transfer money to this account
-            </p>
-            <div className="boxaccount_number">
-              <div className="boxaccount_number_p">
-                <p>Account number</p>
-                <p>123456</p>
-              </div>
-              <FiCopy className="iconnn_copy_account" />
-            </div>
-          </div>
+          
           <button className="save">Confirm</button>
         </div>
       </div>

@@ -6,7 +6,7 @@ import { BiPlus } from "react-icons/bi";
 import { MdOutlinePhonePaused } from "react-icons/md";
 import { RiMapPinLine } from "react-icons/ri";
 import { MdOutlineCountertops } from "react-icons/md";
-import { CgProfile } from "react-icons/cg";
+import { CiImageOn } from "react-icons/ci";
 
 const AddEmployee = () => {
   return (
@@ -25,6 +25,8 @@ const AddEmployee = () => {
                   </button>
                 </div>
               </div>
+
+              
 
               <div className="add-box">
                 <label htmlFor="fname" className="titlelabel">
@@ -52,6 +54,35 @@ const AddEmployee = () => {
                     id="lname"
                     className="input"
                     placeholder="Last name..."
+                  />
+                </div>
+              </div>
+
+              <div className="add-box">
+                <label htmlFor="email" className="titlelabel">
+                  Email:
+                </label>
+                <div className="boxiconnandinput">
+                  <LuUser className="iconinput" />
+                  <input
+                    type="text"
+                    id="email"
+                    className="input"
+                    placeholder="Email..."
+                  />
+                </div>
+              </div>
+              <div className="add-box">
+                <label htmlFor="password" className="titlelabel">
+                  Password:
+                </label>
+                <div className="boxiconnandinput">
+                  <LuUser className="iconinput" />
+                  <input
+                    type="text"
+                    id="password"
+                    className="input"
+                    placeholder="Password..."
                   />
                 </div>
               </div>
@@ -93,7 +124,7 @@ const AddEmployee = () => {
                 <div className="boxiconnandinput">
                   <MdOutlineCountertops className="iconinput" />
 
-                  <select name="role" className="input_select" >
+                  <select name="role" className="input_select">
                     <option value="">Select role</option>
                     <option value="">...</option>
                     <option value="">...</option>
@@ -106,7 +137,7 @@ const AddEmployee = () => {
                   Profile image:
                 </label>
                 <div className="boxiconnandinput">
-                  <CgProfile className="iconinput" />
+                  <CiImageOn className="iconinput" />
                   <input
                     type="file"
                     id="profile"
@@ -115,7 +146,6 @@ const AddEmployee = () => {
                   />
                 </div>
               </div>
-
             </div>
           </form>
         </div>

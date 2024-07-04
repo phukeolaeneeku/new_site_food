@@ -62,6 +62,9 @@ import Employee from "./admin/components/employeeManagement/Employee";
 import AddEmployee from "./admin/components/employeeManagement/AddEmployee";
 import EditEmployee from "./admin/components/employeeManagement/EditEmployee";
 import AccountAdmin from "./admin/components/accountAdmin/AccountAdmin";
+import Member from "./admin/components/MemberManagement/Member";
+import AddMember from "./admin/components/memberManagement/AddMember";
+import EditMember from "./admin/components/memberManagement/EditMember";
 // import { CartProvider } from "./components/cart/CartContext";
 
 
@@ -127,10 +130,11 @@ function App() {
           <Route path="/employee" Component={Employee} />
           <Route path="/add-employee" Component={AddEmployee} />
           <Route path="/edit-employee" Component={EditEmployee} />
-
-
           <Route path="/account-admin" Component={Account_Admin} />
           <Route path="/edit-account" Component={AccountAdmin} />
+          <Route path="/member" Component={Member} />
+          <Route path="/add-member" Component={AddMember} />
+          <Route path="/edit-member" Component={EditMember} />
           
           
         </Routes>
