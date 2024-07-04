@@ -7,6 +7,7 @@ import { MdOutlinePhonePaused } from "react-icons/md";
 import { RiMapPinLine } from "react-icons/ri";
 import { MdOutlineCountertops } from "react-icons/md";
 import { CgProfile } from "react-icons/cg";
+import imageicon from "../../../img/imageicon.jpg";
 
 const AddEmployee = () => {
   return (
@@ -119,6 +120,7 @@ const AddEmployee = () => {
           </form>
         </div>
       </section>
+      
     </>
   );
 };

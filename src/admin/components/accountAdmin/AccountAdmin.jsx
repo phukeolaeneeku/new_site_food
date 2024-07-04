@@ -3,9 +3,8 @@ import "./accountAdmin.css";
 import AdminMenu from "../adminMenu/AdminMenu";
 import { MdOutlineEmail } from "react-icons/md";
 import { LuUser } from "react-icons/lu";
-import { FaAngleLeft } from "react-icons/fa";
 import { FiPhone } from "react-icons/fi";
-import { IoBusinessOutline } from "react-icons/io5";
+import { CgProfile } from "react-icons/cg";
 import { MdAddLocationAlt } from "react-icons/md";
 
 import { Link } from "react-router-dom";
@@ -17,12 +16,6 @@ function AccountAdmin() {
     <>
       <AdminMenu />
       <section id="addAmin">
-        <div className="goback">
-          <Link to="/dashboard" className="box_guopIconbAck">
-            <FaAngleLeft id="box_icon_Back" />
-            <p>Back</p>
-          </Link>
-        </div>
         <div className="box_addAdmin">
           <form >
             <div className="addAdminForm">
@@ -86,22 +79,6 @@ function AccountAdmin() {
 
               <div className="add-box">
                 <label htmlFor="phone" className="titlelabel">
-                  Detailed address:
-                </label>
-                <div className="boxiconnandinput">
-                  <MdAddLocationAlt className="iconinput" />
-                  <input
-                    type="text"
-                    name="sub_address"
-                    className="input"
-                    placeholder="Detailed address (optional)"
-                    required
-                  />
-                </div>
-              </div>
-
-              <div className="add-box">
-                <label htmlFor="phone" className="titlelabel">
                   Phone number:
                 </label>
                 <div className="boxiconnandinput">
@@ -117,33 +94,17 @@ function AccountAdmin() {
               </div>
 
               <div className="add-box">
-                <label htmlFor="phone" className="titlelabel">
-                  Business:
+                <label htmlFor="profile" className="titlelabel">
+                  Profile image:
                 </label>
                 <div className="boxiconnandinput">
-                  <IoBusinessOutline className="iconinput" />
+                  <CgProfile className="iconinput" />
                   <input
-                    type="text"
-                    name="company_number"
-                    className="input"
-                    placeholder="Business registration number (optional)"
-                    required
+                    type="file"
+                    id="profile"
+                    className="input_select"
+                    placeholder="Profile image..."
                   />
-                </div>
-              </div>
-
-              <div className="add-box">
-                <label htmlFor="phone" className="titlelabel">
-                  Descriptions:
-                </label>
-                <div className="boxiconnandinput">
-                  <textarea
-                    className="box_text"
-                    name="introduce"
-                    placeholder="Store introduction (optional/maximum 300 characters)"
-                    maxLength="300"
-                    required
-                  ></textarea>
                 </div>
               </div>
             </div>

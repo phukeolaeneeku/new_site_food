@@ -13,14 +13,6 @@ const Users = () => {
         <div className="container_box_adminusers">
           <div className="box_users">
             <h2>Users</h2>
-            {/* <form className="search">
-              <div className="search-box_menageruser">
-                <input type="text" placeholder="Search ..." />
-                <button type="submit">
-                  <IoSearchOutline />
-                </button>
-              </div>
-            </form> */}
           </div>
 
           <div className="box_users_user">

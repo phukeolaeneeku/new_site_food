@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { BiPlus } from "react-icons/bi";
 import profile from "../../../img/profile.jpg";
 
+
 const Employee = () => {
   const [showConfirmation, setShowConfirmation] = useState(false);
   return (

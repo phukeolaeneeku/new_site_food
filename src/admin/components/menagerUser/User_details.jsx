@@ -3,10 +3,11 @@ import "./user_details.css";
 import AdminMenu from "../adminMenu/AdminMenu";
 import { FaAngleLeft } from "react-icons/fa";
 import { AiOutlineDelete } from "react-icons/ai";
-import { Link, useNavigate, useParams } from "react-router-dom";
+import { IoKeyOutline } from "react-icons/io5";
 import { MdOutlineEmail } from "react-icons/md";
 import { LuUser } from "react-icons/lu";
 import profile from "../../../img/profile.jpg";
+import imageicon from "../../../img/imageicon.jpg";
 
 const User_details = () => {
   const [showConfirmation, setShowConfirmation] = useState(false);
@@ -14,12 +15,6 @@ const User_details = () => {
     <>
       <AdminMenu />
       <section id="addAmin">
-        <div className="goback">
-          <Link to="/users" className="box_guopIconbAck">
-            <FaAngleLeft id="box_icon_Back" />
-            <p>Back</p>
-          </Link>
-        </div>
         <div className="box_addAdmin">
           <form>
             <div className="addAdminForm">
@@ -29,25 +24,15 @@ const User_details = () => {
                   <AiOutlineDelete />
                 </div>
               </div>
+              
               <div className="add-box">
                 <label htmlFor="fname" className="titlelabel">
-                  User ID:
+                  Nickname:
                 </label>
                 <div className="boxiconnandinput">
                   <LuUser className="iconinput" />
                   <div className="input">
-                    <p>UserID...</p>
-                  </div>
-                </div>
-              </div>
-              <div className="add-box">
-                <label htmlFor="fname" className="titlelabel">
-                  Nick Name:
-                </label>
-                <div className="boxiconnandinput">
-                  <LuUser className="iconinput" />
-                  <div className="input">
-                    <p>Nickname...</p>
+                    <p>Nickname</p>
                   </div>
                 </div>
               </div>
@@ -59,7 +44,19 @@ const User_details = () => {
                 <div className="boxiconnandinput">
                   <MdOutlineEmail className="iconinput" />
                   <div className="input">
-                    <p>Email...</p>
+                    <p>Email</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="add-box">
+                <label htmlFor="email" className="titlelabel">
+                  Password:
+                </label>
+                <div className="boxiconnandinput">
+                  <IoKeyOutline className="iconinput" />
+                  <div className="input">
+                    <p>Password</p>
                   </div>
                 </div>
               </div>
@@ -69,7 +66,7 @@ const User_details = () => {
                 </label>
                 <div className="BorderinputThenImage">
                   <div className="input">
-                    <img src={profile} alt="admin profile" />
+                    <img src={imageicon} alt="admin profile" />
                   </div>
                 </div>
               </div>
