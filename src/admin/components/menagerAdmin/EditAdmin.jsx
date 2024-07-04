@@ -11,12 +11,7 @@ const EditAdmin = () => {
     <>
       <AdminMenu />
       <section id="addAmin">
-        <div className="goback">
-          <Link to="/admins" className="box_guopIconbAck">
-            <FaAngleLeft id="box_icon_Back" />
-            <p>Back</p>
-          </Link>
-        </div>
+        
         <div className="box_addAdmin">
           <form >
             <div className="addAdminForm">

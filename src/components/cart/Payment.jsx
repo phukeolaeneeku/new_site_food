@@ -18,15 +18,23 @@ const Payment = () => {
             <div className="box_item_order_list">
               <img src={productImage} alt="" />
               <div className="box_item_order_text">
-                <p>Name: </p>
-                <p>Price:</p>
-                <p>Quantity:</p>
+                <p>Name: Bag</p>
+                <p>Price: 15</p>
+                <p>Quantity:2</p>
+              </div>
+            </div>
+            <div className="box_item_order_list">
+              <img src={productImage} alt="" />
+              <div className="box_item_order_text">
+                <p>Name: Bag</p>
+                <p>Price: 15</p>
+                <p>Quantity:2</p>
               </div>
             </div>
           </div>
 
-          <h2>Address:</h2>
           <div className="box_address">
+            <h2>Address:</h2>
             <form className="box_address_input">
               <div className="box">
                 <label htmlFor="prov">Contact number:</label>

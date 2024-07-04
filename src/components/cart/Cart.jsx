@@ -63,26 +63,9 @@ const Cart = () => {
               <p>$100</p>
             </div>
             <div className="btn">
-              <button className="checkout_btn">Checkout</button>
+              {/* <button className="checkout_btn">Checkout</button> */}
+              <Link to="/payment" className="checkout_btn">Checkout</Link>
             </div>
-          </div>
-        </div>
-        <h2 className="box_betavinOfob asd2">
-          <span className="spennofStyle" />
-          Shopping
-        </h2>
-        <div className="product-area">
-          <div className="box-product">
-            <Link to="">
-              <div className="img">
-                <img src={productImage} alt="image" />
-              </div>
-
-              <ul className="txtOFproduct2">
-                <li className="name">Name...</li>
-                <li className="price">Price...</li>
-              </ul>
-            </Link>
           </div>
         </div>
       </div>
