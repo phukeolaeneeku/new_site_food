@@ -22,19 +22,21 @@ const Bill = () => {
           </div>
           <div className="billGopBox">
             <table>
-              <thead>
+              <thead className="txt_colBill">
                 <tr>
                   <th>Item</th>
                   <th>Price</th>
-                  <th>Amount</th>
+                  <th>Quantity</th>
+                  <th>Status</th>
                   <th>Review</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td>Item name</td>
-                  <td>Price</td>
-                  <td>Quantity</td>
+                  <td>name</td>
+                  <td>120$</td>
+                  <td>2</td>
+                  <td>Panding</td>
 
                   <th>
                     {/* <button className="Delivered_review">Review</button> */}
