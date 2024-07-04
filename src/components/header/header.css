@@ -33,6 +33,7 @@
 .Box_icon_login_BiLogIn {
     display: flex;
     align-items: center;
+    color: #222;
 }
 
 .Box_icon_login_BiLogIn:hover {
@@ -87,6 +88,10 @@
     transition: all 0.3s ease;
 }
 
+.head_colorr {
+    color: #222;
+}
+
 .headMenu .linkLi,
 .head_colorr:hover {
     color: #FF5331;
@@ -103,6 +108,7 @@
 
 .link {
     text-decoration: none;
+    color: #222;
 }
 
 

@@ -4,40 +4,37 @@ import Header from "../header/Header";
 import Menu from "../menuFooter/Menu";
 import { Link, useNavigate } from "react-router-dom";
 import logo_resoure from "../../img/logo_resoure.jpeg";
-
+import { CiTimer } from "react-icons/ci";
 const Order = () => {
   return (
     <>
       <Header />
       <section id="container_order_item">
         <div className="container_order_all">
-          <h2>Order history</h2>
+          <h2>Order history<CiTimer /></h2>
           <div className="box_order_history_container">
-            <div className="title_order_history">
-              <div className="box_title_order">ID</div>
-              <div className="box_title_order">Name</div>
-              <div className="box_title_order">Quantity</div>
-              <div className="box_title_order">Status</div>
-            </div>
 
             <Link to="/bill" className="box_item_order">
-              <div className="item_order_text">1</div>
-              <div className="item_order_text">name</div>
-              <div className="item_order_text">name</div>
-              <div className="item_order_text">name</div>
+              <div className="item_order_text">ID: 1</div>
+              <div className="item_order_text">User</div>
+              <div className="item_order_text">Date: 12/2/2024</div>
+              <div className="item_order_text">Status: Panding</div>
             </Link>
+
             <Link to="/bill" className="box_item_order">
-              <div className="item_order_text">1</div>
-              <div className="item_order_text">name</div>
-              <div className="item_order_text">name</div>
-              <div className="item_order_text">name</div>
+              <div className="item_order_text">ID: 1</div>
+              <div className="item_order_text">User</div>
+              <div className="item_order_text">Date: 12/2/2024</div>
+              <div className="item_order_text">Status: Panding</div>
             </Link>
+
             <Link to="/bill" className="box_item_order">
-              <div className="item_order_text">1</div>
-              <div className="item_order_text">name</div>
-              <div className="item_order_text">name</div>
-              <div className="item_order_text">name</div>
+              <div className="item_order_text">ID: 1</div>
+              <div className="item_order_text">User</div>
+              <div className="item_order_text">Date: 12/2/2024</div>
+              <div className="item_order_text">Status: Panding</div>
             </Link>
+
           </div>
         </div>
 
