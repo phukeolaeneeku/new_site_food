@@ -24,25 +24,47 @@
 .box_item_order_list{
     width: 100%;
     display: flex;
+    gap: 1rem;
     align-items: center;
     border: 1px solid #cccccc79;
     border-radius: 5px;
     padding: 10px;
     cursor: pointer;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     box-shadow: 0 0 7px rgba(0, 0, 0, 0.05);
 }
 
 .box_item_order_list img{
-    width: 10%;
+    width: 9%;
     height: 80px;
     border-radius: 100%;
     overflow: hidden;
 }
 
 .box_item_order_text{
+    width: 90%;
     display: flex;
+    align-items: center;
     justify-content: space-between;
+    padding: 10px;
+}
+
+.box_address{
+    width: 100%;
+    margin: auto;
+    padding: 10px 0;
+}
+.box_address h2{
+    margin-top: 1rem;
+}
+
+
+.box_address_input .box input {
+    width: 100%;
+    padding: 15px ;
+    margin: 10px 0;
+    border-radius: 7px;
+    border: 1px solid #b6b6b6;
 }
 
 
@@ -136,6 +158,17 @@
     .adress_payment_content{
         padding: 10px;
         margin-bottom: 5rem;
+    }
+    .box_item_order_list img{
+        width: 15%;
+        height: 48px;
+    }
+    .box_item_order_text{
+        padding: 0;
+    }
+    .box_address_input .box input {
+        width: 100%;
+        padding: 10px ;
     }
 }
 

@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import "./admins.css";
+import "./employee.css";
 import AdminMenu from "../adminMenu/AdminMenu";
 import { Link } from "react-router-dom";
 import { BiPlus } from "react-icons/bi";
 import profile from "../../../img/profile.jpg";
 
-const Admins = () => {
+const Employee = () => {
   const [showConfirmation, setShowConfirmation] = useState(false);
   return (
     <>
@@ -14,10 +14,10 @@ const Admins = () => {
         <div className="container_body_adminuser">
           <div className="container_box_users">
             <div className="container_add_admin">
-              <h2>Admins</h2>
-              <Link to="/add-admin" className="btn_addadmins">
+              <h2>Employees</h2>
+              <Link to="/add-employee" className="btn_addadmins">
                 <BiPlus id="icon_add_admin" />
-                Add Admin
+                Add employee
               </Link>
             </div>
 
@@ -27,8 +27,8 @@ const Admins = () => {
                   <img src={profile} alt="img" />
                 </div>
                 <div className="box_user_text">
-                  <p>Nickname</p>
-                  <p>Email</p>
+                  <p>Name</p>
+                  <p>Phone</p>
                 </div>
               </div>
               <div className="btn_box_Cont">
@@ -38,7 +38,7 @@ const Admins = () => {
                 >
                   Delete
                 </button>
-                <Link to="/edit-admin" className="btn_edit">
+                <Link to="/edit-employee" className="btn_edit">
                   View
                 </Link>
               </div>
@@ -77,4 +77,4 @@ const Admins = () => {
   );
 };
 
-export default Admins;
+export default Employee;

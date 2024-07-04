@@ -5,7 +5,6 @@ import "./app.css";
 import LoginUser from "./components/loginAndSignup/LoginUser";
 import RegisterUser from "./components/loginAndSignup/RegisterUser";
 import ForgotPassword from "./components/forgotPassword/ForgotPassword";
-
 import Signup1 from "./components/loginAndSignup/Signup1";
 import Signup2 from "./components/loginAndSignup/Signup2";
 import ChangeSeller from "./components/loginAndSignup/ChangeSeller";
@@ -22,16 +21,11 @@ import Categories from "./components/homePage/Categories";
 import ReviewProduct from "./components/order/ReviewProduct"
 import ProfileEdit from "./components/profile/ProfileEdit";
 import Accuont from "./components/profile/Accuont";
-
-
-import Chat_Details from "./components/chat/Chat_Details";
-import Address from "./components/cart/Address";
 import Payment from "./components/cart/Payment";
-import SuccessfulBuy from "./components/cart/SuccessfulBuy";
+
+
+
 import Contact from "./components/contact/Contact"
-import Chats from "./components/chat/Chats";
-import ChatListPage from "./components/chat/ChatListPage";
-import ChatRoomPage from "./components/chat/ChatRoomPage";
 
 //------ Seller ------//
 import Stores from "./components/seller/stores/Store";
@@ -53,63 +47,54 @@ import Addproduct_admin from "./admin/components/products/AddProduct";
 import EditItem from "./admin/components/products/EditItem";
 import AddCategory from "./admin/components/categoryMenagement/AddCategory";
 import EditCategory from "./admin/components/categoryMenagement/EditCategory"
-
-
 import Users from "./admin/components/menagerUser/Users";
 import User_details from "./admin/components/menagerUser/User_details";
-import OrderBill_Admin from "./admin/components/orderPage/OrderBill";
 import Admins from "./admin/components/menagerAdmin/Admins";
 import Add_Admin from "./admin/components/menagerAdmin/AddAdmin";
-import StoreAdmin from "./admin/components/storeMenagement/StoreAdmin";
+import EditAdmin from "./admin/components/menagerAdmin/EditAdmin";
 import Account_Admin from "./admin/components/accountAdmin/AccountAdmin";
 import OrderPending from "./admin/components/orderPage/OrderPending";
 import OrderProcess from "./admin/components/orderPage/OrderProcess";
 import OrderShipped from "./admin/components/orderPage/OrderShipped";
 import OrderDelivered from "./admin/components/orderPage/OrderDelivered";
+import OrderBill_Admin from "./admin/components/orderPage/OrderBill";
+import Employee from "./admin/components/employeeManagement/Employee";
+import AddEmployee from "./admin/components/employeeManagement/AddEmployee";
+import EditEmployee from "./admin/components/employeeManagement/EditEmployee";
+
+
+import StoreAdmin from "./admin/components/storeMenagement/StoreAdmin";
 import Payment_store from "./admin/components/payment_store/PaymentStore";
 import AddPaymentStore from "./admin/components/payment_store/AddPaymentStore";
-import EditAdmin from "./admin/components/menagerAdmin/EditAdmin";
 import AccountAdmin from "./admin/components/accountAdmin/AccountAdmin";
-import { CartProvider } from "./components/cart/CartContext";
+// import { CartProvider } from "./components/cart/CartContext";
 
 
 
 function App() {
   return (
-    <CartProvider>
+    // <CartProvider>
       <Router>
         <Routes>
           {/* --------- Login-Signup page---------- */}
           <Route path="/login" Component={LoginUser} />
           <Route path="/registeruser" Component={RegisterUser} />
           <Route path="/forgotpassword" Component={ForgotPassword} />
-
           <Route path="/signup1" Component={Signup1} />
           <Route path="/signup" Component={Signup1} />
           <Route path="/signup2" Component={Signup2} />
           <Route path="/change-seller" Component={ChangeSeller} />
-          <Route path="/additional-seller" Component={AdditionalSeller} />
-
-          {/* --------- Profile page---------- */}
-          <Route path="/profileedit" Component={ProfileEdit} />
-          <Route path="/accuont" Component={Accuont} />
-
-          <Route path="/contact" Component={Contact} />
-          <Route path="/categories" Component={Categories} />
+          <Route path="/additional-seller" Component={AdditionalSeller} />     
 
           {/* --------- Home Page ---------- */}
           <Route path="/" exact Component={Home} />
           <Route path="/goods" Component={ProductDetails} />
           <Route path="/cart" Component={Cart} />
           <Route path="/review-product" Component={ReviewProduct} />
-
-          <Route path="/successfulbuy" Component={SuccessfulBuy} />
-          <Route path="/address" Component={Address} />
-          <Route path="/chats" Component={Chats} />
-          <Route path="/chat-list" Component={ChatListPage} />
-          <Route path="/chats-room" Component={ChatRoomPage} />
-
-          <Route path="/chat-details" Component={Chat_Details} />
+          <Route path="/profileedit" Component={ProfileEdit} />
+          <Route path="/accuont" Component={Accuont} />
+          <Route path="/contact" Component={Contact} />
+          <Route path="/categories" Component={Categories} />
           <Route path="/payment" Component={Payment} />
           <Route path="/order" Component={Order} />
           <Route path="/bill" Component={Bill} />
@@ -146,6 +131,9 @@ function App() {
           <Route path="/order/processing" Component={OrderProcess} />
           <Route path="/order/shipped" Component={OrderShipped} />
           <Route path="/order/delivered" Component={OrderDelivered} />
+          <Route path="/employee" Component={Employee} />
+          <Route path="/add-employee" Component={AddEmployee} />
+          <Route path="/edit-employee" Component={EditEmployee} />
 
 
           <Route path="/store-admin" Component={StoreAdmin} />
@@ -155,7 +143,7 @@ function App() {
           
         </Routes>
       </Router>
-    </CartProvider>
+    // </CartProvider>
   );
 }
 export default App;

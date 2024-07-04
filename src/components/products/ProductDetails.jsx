@@ -27,7 +27,7 @@ function ProductDetails() {
                   <div className="container_minus_plus">+</div>
                 </div>
                 <div className="Count_product">
-                  <Link className="echbtn btnBut">Buy Now</Link>
+                  <Link to="/payment" className="echbtn btnBut">Buy Now</Link>
                   <Link className="echbtn btnAdd">Add To Cart</Link>
                 </div>
               </div>
@@ -36,7 +36,7 @@ function ProductDetails() {
         </div>
         <h2 className="box_betavinOfob asd2">
           <span className="spennofStyle"> </span>
-          More products
+          More items
         </h2>
         <div className="product-area">
           <div className="box-product">

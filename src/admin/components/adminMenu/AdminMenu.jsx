@@ -42,7 +42,7 @@ const AdminMenu = () => {
               <p>Products</p>
             </NavLink>
             <>
-              <NavLink to="/" className="link">
+              <NavLink to="/employee" className="link">
                 <HiOutlineBuildingStorefront />
                 <p>Emplyee</p>
               </NavLink>
