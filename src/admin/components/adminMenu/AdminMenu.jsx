@@ -9,8 +9,9 @@ import user from "../../../img/user.png";
 import { CiCamera } from "react-icons/ci";
 import { useState } from "react";
 import imageicon from "../../../img/imageicon.jpg";
-import { CiBank } from "react-icons/ci";
+import { IoPeopleOutline } from "react-icons/io5";
 import logo_resoure2 from "../../../img/logo_resoure2.jpeg";
+
 
 const AdminMenu = () => {
   
@@ -46,15 +47,23 @@ const AdminMenu = () => {
                 <HiOutlineBuildingStorefront />
                 <p>Emplyee</p>
               </NavLink>
+              <NavLink to="/" className="link">
+                <LiaUserCogSolid />
+                <p>Members</p>
+              </NavLink>
               <NavLink to="/users" className="link">
                 <BiUser />
                 <p>Users</p>
               </NavLink>
               <NavLink to="/admins" className="link">
-                <LiaUserCogSolid />
-                <p>Member</p>
+                <IoPeopleOutline />
+                <p>Admins</p>
               </NavLink>
             </>
+            {/* <NavLink to="/payment-store" className="link">
+              <CiBank />
+              <p>Bank</p>
+            </NavLink> */}
 
             <div onClick={() => setShowConfirmation(true)} className="link">
               <IoLogOutOutline />

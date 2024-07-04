@@ -49,9 +49,9 @@ import AddCategory from "./admin/components/categoryMenagement/AddCategory";
 import EditCategory from "./admin/components/categoryMenagement/EditCategory"
 import Users from "./admin/components/menagerUser/Users";
 import User_details from "./admin/components/menagerUser/User_details";
-import Admins from "./admin/components/menagerAdmin/Admins";
-import Add_Admin from "./admin/components/menagerAdmin/AddAdmin";
-import EditAdmin from "./admin/components/menagerAdmin/EditAdmin";
+import Admins from "./admin/components/adminManagement/Admins";
+import Add_Admin from "./admin/components/adminManagement/AddAdmin";
+import EditAdmin from "./admin/components/adminManagement/EditAdmin";
 import Account_Admin from "./admin/components/accountAdmin/AccountAdmin";
 import OrderPending from "./admin/components/orderPage/OrderPending";
 import OrderProcess from "./admin/components/orderPage/OrderProcess";
@@ -61,11 +61,6 @@ import OrderBill_Admin from "./admin/components/orderPage/OrderBill";
 import Employee from "./admin/components/employeeManagement/Employee";
 import AddEmployee from "./admin/components/employeeManagement/AddEmployee";
 import EditEmployee from "./admin/components/employeeManagement/EditEmployee";
-
-
-import StoreAdmin from "./admin/components/storeMenagement/StoreAdmin";
-import Payment_store from "./admin/components/payment_store/PaymentStore";
-import AddPaymentStore from "./admin/components/payment_store/AddPaymentStore";
 import AccountAdmin from "./admin/components/accountAdmin/AccountAdmin";
 // import { CartProvider } from "./components/cart/CartContext";
 
@@ -105,8 +100,6 @@ function App() {
           <Route path="/add-product" Component={AddProduct} />
           <Route path="/edit-product/:product_id" Component={EditProduct} />
           <Route path="/eview-store" Component={ReviewStore} />
-          <Route path="/payment-store" Component={Payment_store} />
-          <Route path="/add-payment-store" Component={AddPaymentStore} />
           <Route path="/dashboard-seller" Component={Dashboard_seller} />
           <Route path="/order-pending" Component={PendingOrder} />
           <Route path="/order-processing" Component={ProcessingOrder} />
@@ -136,7 +129,6 @@ function App() {
           <Route path="/edit-employee" Component={EditEmployee} />
 
 
-          <Route path="/store-admin" Component={StoreAdmin} />
           <Route path="/account-admin" Component={Account_Admin} />
           <Route path="/edit-account" Component={AccountAdmin} />
           

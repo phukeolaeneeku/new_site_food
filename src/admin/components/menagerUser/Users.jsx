@@ -27,12 +27,12 @@ const Users = () => {
             </div>
             <div className="btn_box_Cont">
               <button
-                className="delete_storeDetails"
+                className="btn_delete"
                 onClick={() => setShowConfirmation(true)}
               >
                 Delete
               </button>
-              <Link to="/user-details" className="viewMore_storeDetails">
+              <Link to="/user-details" className="btn_edit">
                 View
               </Link>
             </div>
