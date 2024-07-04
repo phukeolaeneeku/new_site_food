@@ -22,12 +22,11 @@ const Bill = () => {
           </div>
           <div className="billGopBox">
             <table>
-              <thead className="txt_colBill">
+              <thead>
                 <tr>
                   <th>Item</th>
                   <th>Price</th>
                   <th>Quantity</th>
-                  <th>Status</th>
                   <th>Review</th>
                 </tr>
               </thead>
@@ -36,11 +35,9 @@ const Bill = () => {
                   <td>name</td>
                   <td>120$</td>
                   <td>2</td>
-                  <td>Panding</td>
-
                   <th>
                     {/* <button className="Delivered_review">Review</button> */}
-                    <Link to="/review-product" className="Delivered_review">Review</Link>
+                    <Link to="/review-product" className="delivered_review">Review</Link>
                   </th>
                 </tr>
               </tbody>

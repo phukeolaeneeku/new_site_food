@@ -19,7 +19,7 @@
     color: #555;
 }
 
-.txt_colBill{
+.txt_colBill {
     color: #333;
 }
 
@@ -112,7 +112,7 @@
     object-fit: cover;
 }
 
-.Delivered_review {
+.delivered_review {
     padding: 7px 20px;
     border: none;
     font-size: 14px;
@@ -123,7 +123,7 @@
 
 }
 
-.Delivered_review:hover {
+.delivered_review:hover {
     background-color: #f44207;
     transition: 0.5s;
     box-shadow: rgba(0, 0, 0, 0.10);
