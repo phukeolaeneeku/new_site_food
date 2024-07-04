@@ -11,39 +11,36 @@ const Order = () => {
       <Header />
       <section id="container_order_item">
         <div className="container_order_all">
-          <h2>Order</h2>
+          <h2>Order history</h2>
+          <div className="box_order_history_container">
+            <div className="title_order_history">
+              <div className="box_title_order">ID</div>
+              <div className="box_title_order">Name</div>
+              <div className="box_title_order">Quantity</div>
+              <div className="box_title_order">Status</div>
+            </div>
 
-          <Link to="/bill" className="box_item_order">
-            <div className="box_item_order_text">
-              <p>ID:..</p>
-              <p>Date Time:...</p>
-            </div>
-            <div className="txtheadeproductorder">
-              <p>Status:..</p>
-            </div>
-          </Link>
+            <Link to="/bill" className="box_item_order">
+              <div className="item_order_text">1</div>
+              <div className="item_order_text">name</div>
+              <div className="item_order_text">name</div>
+              <div className="item_order_text">name</div>
+            </Link>
+            <Link to="/bill" className="box_item_order">
+              <div className="item_order_text">1</div>
+              <div className="item_order_text">name</div>
+              <div className="item_order_text">name</div>
+              <div className="item_order_text">name</div>
+            </Link>
+            <Link to="/bill" className="box_item_order">
+              <div className="item_order_text">1</div>
+              <div className="item_order_text">name</div>
+              <div className="item_order_text">name</div>
+              <div className="item_order_text">name</div>
+            </Link>
+          </div>
         </div>
 
-        <>
-          <h2 className="box_betavinOfob asd2">
-            <span className="spennofStyle" />
-            Items
-          </h2>
-          <div className="product-area">
-            <div className="box-product">
-              <Link to="">
-                <div className="img">
-                  <img src={logo_resoure} alt="image" />
-                </div>
-
-                <ul className="txtOFproduct2">
-                  <li className="name">Name...</li>
-                  <li className="price">Price...</li>
-                </ul>
-              </Link>
-            </div>
-          </div>
-        </>
       </section>
       <Menu />
     </>
