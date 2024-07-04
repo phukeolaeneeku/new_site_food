@@ -1,5 +1,5 @@
 import React from 'react'
-import './SuccessfulBuy.css'
+// import './SuccessfulBuy.css'
 import Header from "../header/Header";
 import Menu from "../menuFooter/Menu";
 import { Link } from "react-router-dom";
